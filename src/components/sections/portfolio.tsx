@@ -28,7 +28,7 @@ export function Portfolio() {
           A curated collection of my work. Each photo tells a unique story, captured with a distinct vision.
         </p>
         <Tabs defaultValue="Portraits" className="mt-8">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mx-auto max-w-md">
+          <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4 mx-auto max-w-xs sm:max-w-md">
             {categories.map((category) => (
               <TabsTrigger key={category} value={category}>{category}</TabsTrigger>
             ))}
