@@ -5,7 +5,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 md:py-24 bg-card">
       <div className="container grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
-        <div className="prose prose-lg text-muted-foreground max-w-none">
+        <div className="prose prose-lg text-muted-foreground max-w-none animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">Get In Touch</h2>
           <p>
             Have a project in mind? Looking for a quote for your wedding or event? I'd love to hear from you. Fill out the form, and I'll get back to you as soon as possible.
@@ -21,7 +21,7 @@ export function Contact() {
              </div>
            </div>
         </div>
-        <div>
+        <div className="animate-fade-in-up delay-200">
           <ContactForm />
         </div>
       </div>

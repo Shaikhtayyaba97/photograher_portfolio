@@ -34,7 +34,7 @@ export function Portfolio() {
             ))}
           </TabsList>
           {categories.map((category) => (
-            <TabsContent key={category} value={category}>
+            <TabsContent key={category} value={category} className="animate-fade-in-up">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                 {portfolioItems.filter(item => item.category === category).map((item, index) => (
                   <Card key={`${category}-${index}`} className="overflow-hidden group border-0 shadow-lg">

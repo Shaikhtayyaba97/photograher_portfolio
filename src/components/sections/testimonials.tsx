@@ -32,7 +32,7 @@ export function Testimonials() {
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2">
+              <CarouselItem key={index} className="md:basis-1/2 animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="p-1">
                   <Card>
                     <CardHeader>

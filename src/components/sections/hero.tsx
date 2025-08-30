@@ -24,14 +24,14 @@ export function Hero() {
         priority
         data-ai-hint="dramatic landscape"
       />
-      <div className="container max-w-4xl mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight drop-shadow-2xl leading-tight">
+      <div className="container max-w-4xl mx-auto px-4 text-center animate-fade-in-up">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight drop-shadow-2xl leading-tight animate-fade-in-up delay-200">
           Capturing Life's Fleeting Moments
         </h1>
-        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-2xl mx-auto">
+        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-2xl mx-auto animate-fade-in-up delay-400">
           Timeless photography that tells your unique story. Explore a world of stunning visuals and professional service.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-600">
           <Button size="lg" onClick={() => scrollTo('portfolio')}>
             Explore Portfolio <ArrowRight />
           </Button>
