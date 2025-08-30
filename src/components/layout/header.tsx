@@ -48,43 +48,52 @@ export function Header() {
         </nav>
 
         {/* Mobile Layout */}
-        <div className="flex w-full items-center justify-between md:hidden">
-          <div className="w-10"></div>
-          {/* Mobile Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Camera className="h-6 w-6 text-accent" />
-            <span className="font-bold">Lensio</span>
-          </Link>
+        <div className="grid grid-cols-3 w-full items-center md:hidden">
+          {/* Left: Camera Icon */}
+          <div className="flex justify-start">
+             <Link href="/" className="flex items-center">
+                <Camera className="h-6 w-6 text-accent" />
+             </Link>
+          </div>
           
-          {/* Mobile Menu Trigger */}
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu />
-                <span className="sr-only">Toggle Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <SheetHeader>
-                <SheetTitle>
-                   <Link href="/" className="mr-6 flex items-center space-x-2">
-                    <Camera className="h-6 w-6 text-accent" />
-                    <span className="font-bold">Lensio</span>
-                  </Link>
-                </SheetTitle>
-                <SheetDescription>
-                  Navigate through the website sections.
-                </SheetDescription>
-              </SheetHeader>
-              <div className="flex flex-col space-y-4 p-4">
-                {navItems.map(item => (
-                   <Button key={item.id} variant="ghost" onClick={() => scrollTo(item.id)} className="justify-start">
-                    {item.label}
-                  </Button>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+          {/* Center: Logo Text */}
+          <div className="flex justify-center">
+            <Link href="/" className="flex items-center">
+              <span className="font-bold text-center">Lensio</span>
+            </Link>
+          </div>
+          
+          {/* Right: Menu Trigger */}
+          <div className="flex justify-end">
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu />
+                  <span className="sr-only">Toggle Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <SheetHeader>
+                  <SheetTitle>
+                     <Link href="/" className="mr-6 flex items-center space-x-2">
+                      <Camera className="h-6 w-6 text-accent" />
+                      <span className="font-bold">Lensio</span>
+                    </Link>
+                  </SheetTitle>
+                  <SheetDescription>
+                    Navigate through the website sections.
+                  </SheetDescription>
+                </SheetHeader>
+                <div className="flex flex-col space-y-4 p-4">
+                  {navItems.map(item => (
+                     <Button key={item.id} variant="ghost" onClick={() => scrollTo(item.id)} className="justify-start">
+                      {item.label}
+                    </Button>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
