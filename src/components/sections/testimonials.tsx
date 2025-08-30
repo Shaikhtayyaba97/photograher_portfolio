@@ -45,8 +45,8 @@ export function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden sm:inline-flex" />
-          <CarouselNext className="hidden sm:inline-flex" />
+          <CarouselPrevious className="sm:inline-flex" />
+          <CarouselNext className="sm:inline-flex" />
         </Carousel>
       </div>
     </section>
