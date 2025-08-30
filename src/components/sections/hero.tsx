@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { TypeAnimation } from 'react-type-animation';
 
 export function Hero() {
   const scrollTo = (id: string) => {
@@ -18,9 +19,18 @@ export function Hero() {
     <section className="w-full">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-16 md:py-24 min-h-[85vh]">
         <div className="flex flex-col items-start text-left animate-fade-in-up">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight leading-tight text-foreground">
-            Timeless Photography, Unforgettable Stories
-          </h1>
+          <TypeAnimation
+            sequence={[
+              'Timeless Photography',
+              2000,
+              'Unforgettable Stories',
+              2000,
+            ]}
+            wrapper="h1"
+            speed={50}
+            className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight leading-tight text-foreground"
+            repeat={Infinity}
+          />
           <p className="mt-6 text-lg md:text-xl font-light text-muted-foreground max-w-3xl">
             We don't just take pictures. We capture the emotions, the laughter, and the love that make your moments last a lifetime. Discover the art of visual storytelling.
           </p>

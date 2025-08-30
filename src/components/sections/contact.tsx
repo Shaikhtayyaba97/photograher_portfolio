@@ -3,7 +3,7 @@ import { Mail, Pin } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 md:py-24 bg-card">
+    <section id="contact" className="py-16 md:py-24 glassmorphism m-4 rounded-lg">
       <div className="container grid lg:grid-cols-2 gap-8 md:gap-16 items-start">
         <div className="prose prose-lg text-muted-foreground max-w-none animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">Get In Touch</h2>

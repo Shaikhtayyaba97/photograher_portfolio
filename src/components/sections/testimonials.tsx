@@ -33,9 +33,9 @@ export function Testimonials() {
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="md:basis-1/2 animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="p-1">
-                  <Card>
+                  <Card className="glassmorphism">
                     <CardHeader>
-                      <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                      <CardTitle className="text-lg text-accent">{testimonial.name}</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="text-muted-foreground">"{testimonial.quote}"</p>

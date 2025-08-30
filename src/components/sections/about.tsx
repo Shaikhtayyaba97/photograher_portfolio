@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function About() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-card">
+    <section id="about" className="py-16 md:py-24 glassmorphism m-4 rounded-lg">
       <div className="container grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <div className="relative aspect-square md:aspect-[4/5] rounded-lg overflow-hidden shadow-lg animate-fade-in">
           <Image

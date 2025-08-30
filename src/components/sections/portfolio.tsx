@@ -35,17 +35,17 @@ export function Portfolio() {
           </TabsList>
           {categories.map((category) => (
             <TabsContent key={category} value={category} className="animate-fade-in-up">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 {portfolioItems.filter(item => item.category === category).map((item, index) => (
-                  <Card key={`${category}-${index}`} className="overflow-hidden group border-0 shadow-lg">
+                  <Card key={`${category}-${index}`} className="overflow-hidden group glassmorphism border-0 shadow-lg transition-all duration-300 hover:shadow-accent/20 hover:shadow-2xl">
                     <CardContent className="p-0">
-                      <div className="relative aspect-[4/3]">
+                      <div className="relative aspect-[4/3] overflow-hidden">
                         <Image
                           src={item.src}
                           alt={`${item.category} photography ${index + 1}`}
                           fill
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+                          className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
                           data-ai-hint={item.hint}
                         />
                       </div>
