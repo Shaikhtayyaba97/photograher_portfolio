@@ -7,7 +7,7 @@ export function About() {
         <div className="relative aspect-square md:aspect-[4/5] rounded-lg overflow-hidden shadow-lg animate-fade-in">
           <Image
             src="https://picsum.photos/800/1000"
-            alt="The photographer"
+            alt="The photographer, Jane Doe"
             width={800}
             height={1000}
             className="object-cover w-full h-full transition-transform duration-500 ease-in-out hover:scale-105"
@@ -15,12 +15,12 @@ export function About() {
           />
         </div>
         <div className="prose prose-lg text-muted-foreground max-w-none animate-fade-in-up delay-200">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">My Vision &amp; Artistry</h2>
           <p>
-            Hi, I'm the artist behind Aperture Aesthetic. My journey into photography began from a deep-seated passion for storytelling. I believe that every moment has a story to tell, and my goal is to capture those fleeting, authentic emotions in a way that is both beautiful and timeless.
+            Hello, I&apos;m the heart and eye behind Lensio. My love for photography is rooted in a fascination with capturing the unscripted moments that tell the most powerful stories. I believe photography is more than just taking pictures—it&apos;s about preserving the raw emotion and delicate beauty of a single, unrepeatable moment in time.
           </p>
           <p>
-            My artistic philosophy is simple: find the extraordinary in the ordinary. Whether it's the subtle glance between a newly married couple, the serene majesty of a mountain landscape, or the vibrant energy of a live event, I strive to create images that are not just seen, but felt. Let's create something beautiful together.
+            My approach is to find the sublime in the simple. Whether it&apos;s the quiet anticipation before a bride walks down the aisle, the breathtaking expanse of a natural landscape, or the electric atmosphere of a live event, I aim to create images that resonate on a deeper level. Let&apos;s collaborate to turn your moments into timeless art.
           </p>
         </div>
       </div>
