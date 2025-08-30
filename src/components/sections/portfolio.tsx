@@ -3,16 +3,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 
 const portfolioItems = [
-  { category: "Portraits", src: "https://picsum.photos/800/600?random=1", hint: "portrait photo" },
+  { category: "Portraits", src: "https://picsum.photos/800/600?random=1", hint: "portrait photo", description: "Capturing the essence of individual personalities." },
   { category: "Portraits", src: "https://picsum.photos/800/600?random=5", hint: "person smiling" },
   { category: "Portraits", src: "https://picsum.photos/800/600?random=9", hint: "woman model" },
-  { category: "Weddings", src: "https://picsum.photos/800/600?random=2", hint: "bride photo" },
+  { category: "Weddings", src: "https://picsum.photos/800/600?random=2", hint: "bride photo", description: "Chronicling the unforgettable moments of your special day." },
   { category: "Weddings", src: "https://picsum.photos/800/600?random=6", hint: "groom photo" },
   { category: "Weddings", src: "https://picsum.photos/800/600?random=10", hint: "bride groom" },
-  { category: "Nature", src: "https://picsum.photos/800/600?random=3", hint: "nature landscape" },
+  { category: "Nature", src: "https://picsum.photos/800/600?random=3", hint: "nature landscape", description: "Exploring the breathtaking beauty of the natural world." },
   { category: "Nature", src: "https://picsum.photos/800/600?random=7", hint: "forest path" },
   { category: "Nature", src: "https://picsum.photos/800/600?random=11", hint: "mountain view" },
-  { category: "Events", src: "https://picsum.photos/800/600?random=4", hint: "concert event" },
+  { category: "Events", src: "https://picsum.photos/800/600?random=4", hint: "concert event", description: "Documenting the energy and excitement of every occasion." },
   { category: "Events", src: "https://picsum.photos/800/600?random=8", hint: "party celebration" },
   { category: "Events", src: "https://picsum.photos/800/600?random=12", hint: "corporate meeting" },
 ];
@@ -35,6 +35,12 @@ export function Portfolio() {
           </TabsList>
           {categories.map((category) => (
             <TabsContent key={category} value={category}>
+               <div className="text-center my-8">
+                <h3 className="text-2xl font-headline font-semibold text-foreground">{category}</h3>
+                <p className="text-muted-foreground mt-2 max-w-xl mx-auto">
+                  {portfolioItems.find(item => item.category === category)?.description}
+                </p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mt-8">
                 {portfolioItems.filter(item => item.category === category).map((item, index) => (
                   <Card 
