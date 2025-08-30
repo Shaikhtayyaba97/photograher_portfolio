@@ -1,7 +1,6 @@
 "use server";
 
 import { z } from "zod";
-import { enhancePhoto, type EnhancePhotoInput } from "@/ai/flows/enhance-uploaded-photos";
 
 const contactFormSchema = z.object({
   name: z.string(),
@@ -19,15 +18,5 @@ export async function handleContactForm(values: z.infer<typeof contactFormSchema
   } catch (error) {
     console.error("Contact form error:", error);
     return { success: false, message: "Failed to send message. Please try again." };
-  }
-}
-
-export async function handleEnhancePhoto(input: EnhancePhotoInput) {
-  try {
-    const result = await enhancePhoto(input);
-    return { success: true, data: result };
-  } catch (error) {
-    console.error("Enhance photo error:", error);
-    return { success: false, message: "An unexpected error occurred while enhancing the photo. The AI may not be able to process this image." };
   }
 }
