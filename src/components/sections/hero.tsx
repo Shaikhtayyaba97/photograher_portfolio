@@ -17,7 +17,7 @@ export function Hero() {
   return (
     <section className="relative h-[85vh] w-full flex items-center justify-center text-white overflow-hidden">
       <Image
-        src="https://picsum.photos/1920/1280"
+        src="/hero.png"
         alt="A stunning photograph from the portfolio"
         fill
         className="object-cover -z-10 brightness-[0.5]"
