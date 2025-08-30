@@ -38,7 +38,7 @@ export function Header() {
         </Link>
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 text-sm font-medium">
           {navItems.map(item => (
-            <button key={item.id} onClick={() => scrollTo(item.id)} className="transition-colors hover:text-primary">
+            <button key={item.id} onClick={() => scrollTo(item.id)} className="transition-colors hover:text-accent">
               {item.label}
             </button>
           ))}
