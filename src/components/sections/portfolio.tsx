@@ -34,10 +34,14 @@ export function Portfolio() {
             ))}
           </TabsList>
           {categories.map((category) => (
-            <TabsContent key={category} value={category} className="animate-fade-in-up">
+            <TabsContent key={category} value={category}>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                 {portfolioItems.filter(item => item.category === category).map((item, index) => (
-                  <Card key={`${category}-${index}`} className="overflow-hidden group glassmorphism border-0 shadow-lg transition-all duration-300 hover:shadow-accent/20 hover:shadow-2xl">
+                  <Card 
+                    key={`${category}-${index}`} 
+                    className="overflow-hidden group glassmorphism border-0 shadow-lg transition-all duration-300 hover:shadow-accent/20 hover:shadow-2xl animate-fade-in-up"
+                    style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'both' }}
+                  >
                     <CardContent className="p-0">
                       <div className="relative aspect-[4/3] overflow-hidden">
                         <Image
