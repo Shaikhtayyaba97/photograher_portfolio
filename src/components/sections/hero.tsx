@@ -15,28 +15,28 @@ export function Hero() {
   };
 
   return (
-    <section className="relative h-[80vh] md:h-screen w-full flex items-center justify-center text-white overflow-hidden">
+    <section className="relative h-[85vh] w-full flex items-center justify-center text-white overflow-hidden">
       <Image
         src="https://picsum.photos/1920/1280"
         alt="A stunning photograph from the portfolio"
         fill
-        className="object-cover -z-10 brightness-[0.4]"
+        className="object-cover -z-10 brightness-[0.5]"
         priority
         data-ai-hint="dramatic landscape"
       />
       <div className="container max-w-4xl mx-auto px-4 text-center animate-fade-in-up">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight drop-shadow-2xl leading-tight animate-fade-in-up delay-200">
-          Capturing Life's Fleeting Moments
+          Timeless Photography, Unforgettable Stories
         </h1>
-        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-2xl mx-auto animate-fade-in-up delay-400">
-          Timeless photography that tells your unique story. Explore a world of stunning visuals and professional service.
+        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-3xl mx-auto animate-fade-in-up delay-400">
+          We don't just take pictures. We capture the emotions, the laughter, and the love that make your moments last a lifetime. Discover the art of visual storytelling.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-600">
           <Button size="lg" onClick={() => scrollTo('portfolio')}>
-            Explore Portfolio <ArrowRight />
+            Explore My Work <ArrowRight />
           </Button>
           <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white hover:text-black" onClick={() => scrollTo('contact')}>
-            Book a Session
+            Book Now
           </Button>
         </div>
       </div>
