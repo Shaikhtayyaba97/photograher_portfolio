@@ -13,7 +13,7 @@ export function Contact() {
            <div className="mt-8 space-y-4 not-prose">
              <div className="flex items-center gap-4">
               <Mail className="w-5 h-5 text-accent" />
-              <span>contact@apertureaesthetic.com</span>
+              <span>contact@lensio.com</span>
              </div>
              <div className="flex items-center gap-4">
               <Pin className="w-5 h-5 text-accent" />

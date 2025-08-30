@@ -28,7 +28,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Camera className="h-6 w-6 text-primary" />
-          <span className="font-bold hidden sm:inline-block">Aperture Aesthetic</span>
+          <span className="font-bold hidden sm:inline-block">Lensio</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 text-sm font-medium">
           {navItems.map(item => (
@@ -49,7 +49,7 @@ export function Header() {
               <div className="flex flex-col space-y-4 p-4">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                   <Camera className="h-6 w-6 text-primary" />
-                  <span className="font-bold">Aperture Aesthetic</span>
+                  <span className="font-bold">Lensio</span>
                 </Link>
                 {navItems.map(item => (
                    <Button key={item.id} variant="ghost" onClick={() => scrollTo(item.id)} className="justify-start">

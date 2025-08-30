@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Aperture Aesthetic',
-  description: 'Capturing life\'s moments with artistry and passion.',
+  title: 'Lensio',
+  description: 'Modern Photography Studio',
 };
 
 export default function RootLayout({

@@ -13,7 +13,7 @@ export function Hero() {
       />
       <div className="container max-w-4xl mx-auto px-4">
         <h1 className="text-4xl md:text-6xl font-headline font-bold drop-shadow-lg">
-          Aperture Aesthetic
+          Lensio
         </h1>
         <p className="mt-4 text-lg md:text-2xl font-light drop-shadow-md">
           Capturing life's moments with artistry and passion.
