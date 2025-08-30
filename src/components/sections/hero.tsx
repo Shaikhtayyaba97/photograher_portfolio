@@ -20,7 +20,7 @@ export function Hero() {
         src="/hero.png"
         alt="A stunning photograph from the portfolio"
         fill
-        className="object-cover -z-10 brightness-[0.5]"
+        className="object-cover -z-10"
         priority
         data-ai-hint="dramatic landscape"
       />
