@@ -49,9 +49,7 @@ export function Header() {
 
         {/* Mobile Layout */}
         <div className="flex w-full items-center justify-between md:hidden">
-          {/* Empty div to balance the flex container, pushing the logo to the center */}
-          <div className="w-10"></div> 
-
+          <div className="w-10"></div>
           {/* Mobile Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Camera className="h-6 w-6 text-accent" />
