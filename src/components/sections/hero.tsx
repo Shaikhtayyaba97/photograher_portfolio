@@ -25,13 +25,13 @@ export function Hero() {
         data-ai-hint="dramatic landscape"
       />
       <div className="container max-w-4xl mx-auto px-4 text-center animate-fade-in-up">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight drop-shadow-2xl leading-tight animate-fade-in-up delay-200">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold tracking-tight drop-shadow-2xl leading-tight">
           Timeless Photography, Unforgettable Stories
         </h1>
-        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-3xl mx-auto animate-fade-in-up delay-400">
+        <p className="mt-6 text-lg md:text-xl font-light text-neutral-200 drop-shadow-lg max-w-3xl mx-auto">
           We don't just take pictures. We capture the emotions, the laughter, and the love that make your moments last a lifetime. Discover the art of visual storytelling.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-600">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button size="lg" onClick={() => scrollTo('portfolio')}>
             Explore My Work <ArrowRight />
           </Button>
