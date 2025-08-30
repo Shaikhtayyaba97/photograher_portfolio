@@ -10,6 +10,12 @@ export function Header() {
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
+      // Close the sheet if it's open
+      const closeButton = document.querySelector('[data-radix-dialog-close]');
+      if (closeButton instanceof HTMLElement) {
+        closeButton.click();
+      }
+      
       element.scrollIntoView({
         behavior: "smooth",
       });
