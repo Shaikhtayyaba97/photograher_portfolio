@@ -15,7 +15,7 @@ export function About() {
           />
         </div>
         <div className="prose prose-lg text-muted-foreground max-w-none animate-fade-in-up delay-200">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground">My Vision &amp; Artistry</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold text-foreground mb-4">About</h2>
           <p>
             Hello, I&apos;m the heart and eye behind Lensio. My love for photography is rooted in a fascination with capturing the unscripted moments that tell the most powerful stories. I believe photography is more than just taking pictures—it&apos;s about preserving the raw emotion and delicate beauty of a single, unrepeatable moment in time.
           </p>
