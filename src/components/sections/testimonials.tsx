@@ -27,13 +27,13 @@ export function Testimonials() {
             align: "start",
             loop: true,
           }}
-          className="w-full max-w-4xl mx-auto mt-8"
+          className="w-full max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto mt-8"
         >
           <CarouselContent>
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="md:basis-1/2 animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
+              <CarouselItem key={index} className="sm:basis-1/2 animate-fade-in-up" style={{ animationDelay: `${index * 150}ms` }}>
                 <div className="p-1">
-                  <Card className="glassmorphism">
+                  <Card className="glassmorphism h-full">
                     <CardHeader>
                       <CardTitle className="text-lg text-accent">{testimonial.name}</CardTitle>
                     </CardHeader>
@@ -45,8 +45,8 @@ export function Testimonials() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious className="hidden sm:inline-flex" />
+          <CarouselNext className="hidden sm:inline-flex" />
         </Carousel>
       </div>
     </section>
