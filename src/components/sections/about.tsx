@@ -10,7 +10,7 @@ export function About() {
             alt="The photographer"
             width={800}
             height={1000}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full transition-transform duration-500 ease-in-out hover:scale-105"
             data-ai-hint="photographer portrait"
           />
         </div>

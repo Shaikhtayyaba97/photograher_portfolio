@@ -33,12 +33,12 @@ export function Hero() {
             </Button>
           </div>
         </div>
-        <div className="relative w-full h-80 md:h-[60vh] animate-fade-in rounded-lg overflow-hidden shadow-2xl">
+        <div className="relative w-full h-80 md:h-[60vh] rounded-lg overflow-hidden shadow-2xl">
           <Image
             src="/hero.png"
             alt="A stunning photograph from the portfolio"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 ease-in-out hover:scale-105"
             priority
             data-ai-hint="dramatic landscape"
           />
