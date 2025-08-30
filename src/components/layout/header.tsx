@@ -1,21 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { Camera } from "lucide-react";
+import { Camera, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { useState } from "react";
 
 export function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const scrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      // Close the sheet if it's open
-      const closeButton = document.querySelector('[data-radix-dialog-close]');
-      if (closeButton instanceof HTMLElement) {
-        closeButton.click();
-      }
-      
+      setIsMobileMenuOpen(false); // Close the sheet
       element.scrollIntoView({
         behavior: "smooth",
       });
@@ -65,7 +62,7 @@ export function Header() {
           
           {/* Right: Menu Trigger */}
           <div className="flex justify-end">
-            <Sheet>
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu />
