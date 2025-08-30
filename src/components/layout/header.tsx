@@ -32,10 +32,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
       <div className="container flex h-14 items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        {/* Desktop Logo */}
+        <Link href="/" className="mr-6 hidden items-center space-x-2 md:flex">
           <Camera className="h-6 w-6 text-accent" />
           <span className="font-bold hidden sm:inline-block">Lensio</span>
         </Link>
+        
+        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 text-sm font-medium">
           {navItems.map(item => (
             <button key={item.id} onClick={() => scrollTo(item.id)} className="transition-colors hover:text-accent">
@@ -43,10 +46,22 @@ export function Header() {
             </button>
           ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
+
+        {/* Mobile Layout */}
+        <div className="flex w-full items-center justify-between md:hidden">
+          {/* Empty div to balance the flex container, pushing the logo to the center */}
+          <div className="w-10"></div> 
+
+          {/* Mobile Logo */}
+          <Link href="/" className="flex items-center space-x-2">
+            <Camera className="h-6 w-6 text-accent" />
+            <span className="font-bold">Lensio</span>
+          </Link>
+          
+          {/* Mobile Menu Trigger */}
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon">
                 <Menu />
                 <span className="sr-only">Toggle Menu</span>
               </Button>
