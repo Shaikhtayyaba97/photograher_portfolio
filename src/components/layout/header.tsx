@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Camera } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 
 export function Header() {
@@ -52,11 +52,18 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
+              <SheetHeader>
+                <SheetTitle>
+                   <Link href="/" className="mr-6 flex items-center space-x-2">
+                    <Camera className="h-6 w-6 text-accent" />
+                    <span className="font-bold">Lensio</span>
+                  </Link>
+                </SheetTitle>
+                <SheetDescription>
+                  Navigate through the website sections.
+                </SheetDescription>
+              </SheetHeader>
               <div className="flex flex-col space-y-4 p-4">
-                <Link href="/" className="mr-6 flex items-center space-x-2">
-                  <Camera className="h-6 w-6 text-accent" />
-                  <span className="font-bold">Lensio</span>
-                </Link>
                 {navItems.map(item => (
                    <Button key={item.id} variant="ghost" onClick={() => scrollTo(item.id)} className="justify-start">
                     {item.label}
